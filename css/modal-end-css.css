@@ -1,0 +1,23 @@
+#modal-end div.content{
+    overflow: hidden;
+    padding-top: 0%;
+}
+.mqec-nova_igra,
+.mqec-ponovi_ovu,
+.mqec-izadji_iz_igre {
+    display: block;
+    box-sizing: border-box;
+    height: 30%;
+    width: 80%;
+    margin-top: 1.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 6vw;
+    color: #1F4E78;
+    background-color: #5B9BD5;
+    border-color: #1F4E78;
+    cursor: pointer;
+}
+#modal-end div.close-button{
+    display: none;
+}

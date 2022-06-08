@@ -1,0 +1,11 @@
+.modal-help-content-container{
+    height: 100%;
+    width: 100%;
+    font-size: 2vw;
+}
+.modal-help-content-container ul li {
+    margin-top: 10px;
+}
+#modal-help div.content{
+    overflow: hidden;
+}
