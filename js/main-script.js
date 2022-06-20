@@ -1,3 +1,15 @@
+var Sounds = {
+    sound_1: new Audio("https://audio.jukehost.co.uk/xFXrBaOcFGuS0POLl6wCByfABCeJOqvt"),
+    sound_2: new Audio("https://audio.jukehost.co.uk/qgJYIa364K5hDxOHJV1QhRDkDKYYy6Xc"),
+    sound_3: new Audio("https://audio.jukehost.co.uk/TQPoV2QgNdM2kRhsPZE9MkEvuksFT4oY"),
+    sound_4: new Audio("https://audio.jukehost.co.uk/kg544D8m9dAfAxKxEC8b8UT7NU57TWci"),
+    sound_5: new Audio("https://audio.jukehost.co.uk/Yy4PUFkPKUrAaWqsS31own139xAkaVPW"),
+    sound_6: new Audio("https://audio.jukehost.co.uk/p52Lpkyvo78IglCvOrE4A5yCiG5yx6o7"),
+    sound_7: new Audio("https://audio.jukehost.co.uk/GsYHiHGF0gEjcclLbksve2QTRKISR5Q3"),
+    game_won: new Audio("https://audio.jukehost.co.uk/F3GLbVwgC8rER12NiOpb7PaYV0W8JHRw"),
+    game_lost: new Audio("https://audio.jukehost.co.uk/Y2QfIpEAU8ku7sVcjLoCBVmtvfjqapaW"),
+    boom: new Audio("https://audio.jukehost.co.uk/qQtLhFQwML12fqdjx8p4x4v24ImCmzrh"),
+}
 var tabla;
 var dugmici;
 var pozicijeMina;
@@ -270,12 +282,10 @@ function PlaySound(id){
     if(id == 0) return;
     var sound;
 
-    if(id == "boom") sound = new Audio("sounds/boom.wav");
-    else if(id == "game-lost") sound = new Audio("sounds/game-lost.wav");
-    else if(id == "game-won") sound = new Audio("sounds/game-won.mp3");
-    else sound = new Audio("sounds/sound-" + id + ".wav");
-
-    sound.play();
+    if(id == "boom") Sounds["boom"].play();
+    else if(id == "game-lost") Sounds["game_lost"].play();
+    else if(id == "game-won") Sounds["game_won"].play();
+    else Sounds["sound_" + id].play();
 }
 function Defeat(){
     dugmici.forEach(function(element){
@@ -294,12 +304,12 @@ function Defeat(){
         i++;
 
         PlaySound("boom");
-
+        
         dugmici[x][y].classList.toggle("exploded");
         dugmici[x][y].parentNode.classList.toggle("exploded");
-    }, 1500);
+    }, 2000);
 
-    var tout = NOMS * 1500;
+    var tout = NOMS * 2000;
 
     setTimeout(() => {
         clearInterval(time);
