@@ -21,3 +21,11 @@
 #modal-end div.close-button{
     display: none;
 }
+.modal-end-content-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}

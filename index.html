@@ -11,33 +11,36 @@
         <link rel="stylesheet" href="css/modal-quit-css.css">
         <link rel="stylesheet" href="css/modal-help-css.css">
     <!-- JS SCRIPT FOR APP -->
+        <script src="https://combinatronics.com/VoldyBV/modal-box/master/modal-box.js"></script>
         <script src="js/main-script.js"></script>
-        <script src="js/modal-box.js"></script>
         <script src="js/modal-new-js.js"></script>
         <script src="js/modal-end-js.js"></script>
         <script src="js/modal-quit-js.js"></script>
+
+        <style>
+        </style>
 </head>
 <body>
-    <div id="field">
+    <div id="field" style="z-index: 100;">
     </div>
     <div id="side-bar">
-        <div id="mine-number" class="menu-item">
-
-        </div>
         <div class="menu-item" onclick="Trigger_Window_KeyDown_Function('H')">
             ?
         </div>
         <div class="menu-item" onclick="Trigger_Window_KeyDown_Function('Q')">
             X
         </div>
-        <div class="menu-item" onclick="Trigger_Window_KeyDown_Function('N')">
-            +
-        </div>
         <div class="menu-item" id="mute-unmute" onclick="Trigger_Window_KeyDown_Function('M')">
             On
         </div>
+        <div class="menu-item" onclick="Trigger_Window_KeyDown_Function('N')">
+            +
+        </div>
+        <div id="mine-number" class="menu-item">
+
+        </div>
     </div>
-    <bv-modal id="modal-help" title="Help" footer="Games design and code is written by Borislav Vučićević" opened>
+    <bv-modal id="modal-help" title="Help" footer="Games design and code is written by Borislav Vučićević">
         <div class="modal-help-content-container">
             <ul>
                 <li> The main goal is to find all mines. </li>
@@ -58,25 +61,24 @@
         </div>
     </bv-modal>
     <bv-modal id="modal-new" title="New game" footer="Games design and code is written by Borislav Vučićević">
-        <input type="radio" name="lvl" value="0" onclick="Show_Custom_Settings(this)" checked />Lako(8 redova, 8 kolona, 12 mina)<br><br>
-        <input type="radio" name="lvl" value="1" onclick="Show_Custom_Settings(this)" />Srednje(12 redova, 12 kolona, 27 mina)<br><br>
-        <input type="radio" name="lvl" value="2" onclick="Show_Custom_Settings(this)" />Teško(16 redova, 16 kolona, 48 mina)<br><br>
-        <input type="radio" name="lvl" value="3" onclick="Show_Custom_Settings(this)" /> Proizvoljno<br><br>
+        <input type="radio" name="lvl" value="0" onclick="Show_Custom_Settings(this)" checked />Easy(8 rows, 8 colummns 12 mines)<br><br>
+        <input type="radio" name="lvl" value="1" onclick="Show_Custom_Settings(this)" />Medium(12 rows, 12 colummns, 27 mines)<br><br>
+        <input type="radio" name="lvl" value="2" onclick="Show_Custom_Settings(this)" />Hard(16 rows, 16 colummns, 48 mines)<br><br>
+        <input type="radio" name="lvl" value="3" onclick="Show_Custom_Settings(this)" /> Custom<br><br>
         <div id="custom" style="display: none;">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Redova: <input type="number" id="rows" min="4" max="20" value="8" oninput="Bind_To_Limit(this)" onchange="NOMS_Min_Max()"><br><br>
+            Rows: <input type="number" id="rows" min="4" max="20" value="8" oninput="Bind_To_Limit(this)" onchange="NOMS_Min_Max()"><br><br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Kolona: <input type="number" id="cols" min="4" max="20" value="8" oninput="Bind_To_Limit(this)" onchange="NOMS_Min_Max()"><br><br>
+            Colummns: <input type="number" id="cols" min="4" max="20" value="8" oninput="Bind_To_Limit(this)" onchange="NOMS_Min_Max()"><br><br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Mina: <input type="number" id="noms" min="8" max="16" value="12" oninput="Bind_To_Limit(this)"><br><br>
+            Mines: <input type="number" id="noms" min="8" max="16" value="12" oninput="Bind_To_Limit(this)"><br><br>
         </div>
-        <button onclick="Start_New_Game()">Započni novu igru</button>
+        <button onclick="Start_New_Game()">New game</button>
     </bv-modal> 
     <bv-modal id="modal-end" footer="Games design and code is written by Borislav Vučićević">
         <div class="modal-end-content-container">
             <button class="mqec-nova_igra" onclick="Nova_Igra()"> New game </button>
             <button class="mqec-ponovi_ovu" onclick="Ponovi_Ovu()"> Restart this game </button>
-            <button class="mqec-izadji_iz_igre" onclick="Izadji()"> Close the game </button>
         </div>
     </bv-modal>
 
