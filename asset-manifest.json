@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/minesweeper/static/css/main.4504d2a5.css",
+    "main.js": "/minesweeper/static/js/main.bb94d874.js",
+    "static/js/453.7a4aac71.chunk.js": "/minesweeper/static/js/453.7a4aac71.chunk.js",
+    "static/media/defeat.wav": "/minesweeper/static/media/defeat.cdc3485e90912002006b.wav",
+    "static/media/explosion.wav": "/minesweeper/static/media/explosion.4a84a7e702d54b8adcbc.wav",
+    "static/media/mine5.wav": "/minesweeper/static/media/mine5.5585441e2fe54167a4bb.wav",
+    "static/media/victory.mp3": "/minesweeper/static/media/victory.c363cb04000a2baf86b0.mp3",
+    "static/media/mine6.wav": "/minesweeper/static/media/mine6.cd1d0fa8f0b3f07f89e6.wav",
+    "static/media/mine3.wav": "/minesweeper/static/media/mine3.209b376cc268e1bd7d1e.wav",
+    "static/media/mine4.wav": "/minesweeper/static/media/mine4.7f172c8bc209bf3abae6.wav",
+    "static/media/mine7.wav": "/minesweeper/static/media/mine7.95974c169ca72e8c58e1.wav",
+    "static/media/mine2.wav": "/minesweeper/static/media/mine2.b79964353581b4657205.wav",
+    "static/media/mine1.wav": "/minesweeper/static/media/mine1.541720eaf57a60c3951c.wav",
+    "static/media/soundOn.svg": "/minesweeper/static/media/soundOn.21b740b2ccf5a99af892f0e616191efa.svg",
+    "static/media/bomb.svg": "/minesweeper/static/media/bomb.75aa4f656b9975811d2a9b89d6de2cd6.svg",
+    "static/media/help.svg": "/minesweeper/static/media/help.f834ed77f9562ddbc705349bfcea6d88.svg",
+    "static/media/settings.svg": "/minesweeper/static/media/settings.233f5783b8f0fa69f21083e5453f5937.svg",
+    "static/media/soundOff.svg": "/minesweeper/static/media/soundOff.3a871c4d8446bfdba026b54979a0252c.svg",
+    "static/media/star.svg": "/minesweeper/static/media/star.83a587e31833bf5a8f2ca1450c129aae.svg",
+    "index.html": "/minesweeper/index.html",
+    "static/media/flag.svg": "/minesweeper/static/media/flag.6821d85747453d6f19fc46891d32f403.svg",
+    "main.4504d2a5.css.map": "/minesweeper/static/css/main.4504d2a5.css.map",
+    "main.bb94d874.js.map": "/minesweeper/static/js/main.bb94d874.js.map",
+    "453.7a4aac71.chunk.js.map": "/minesweeper/static/js/453.7a4aac71.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4504d2a5.css",
+    "static/js/main.bb94d874.js"
+  ]
+}
