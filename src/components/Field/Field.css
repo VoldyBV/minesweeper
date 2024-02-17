@@ -1,0 +1,108 @@
+.field-wrapper {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+}
+.field-wrapper .field {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: var(--ultra-light-blue);
+    border: solid 2px var(--light-blue);
+    display: grid;
+    max-height: 100%;
+    max-width: 95%;
+}
+.field-wrapper .field button.box {
+    height: 2.5rem;
+    aspect-ratio: 1 / 1;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    line-height: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.field-wrapper .field button.box.slate-gray {
+    background-color: var(--slate-gray);
+}
+.field-wrapper .field button.box.purple {
+    background-color: var(--purple);
+}
+.field-wrapper .field button.flagged {
+    background-size: 80% 80%;
+    background-position: center;
+    background-image: url(../../icons/flag.svg);
+    background-repeat: no-repeat;
+    animation: flag-field 0.3s;
+}
+.field-wrapper .field button.bombed {
+    background-size: 80% 80%;
+    background-position: center;
+    background-image: url(../../icons/bomb.svg);
+    background-repeat: no-repeat;
+}
+.field-wrapper .field button.bombed {
+    background-size: 80% 80%;
+    background-position: center;
+    background-image: url(../../icons/bomb.svg);
+    background-repeat: no-repeat;
+}
+.field-wrapper .field button[starred] {
+    background-size: 80% 80%;
+    background-position: center;
+    background-image: url(../../icons/star.svg);
+    background-repeat: no-repeat;
+}
+.field-wrapper .field button.box.indicator-0 {
+    background-color: var(--white);
+    color: var(--indicator-0);
+}
+.field-wrapper .field button.box.indicator-1 {
+    background-color: var(--white);
+    color: var(--indicator-1);
+}
+.field-wrapper .field button.box.indicator-2 {
+    background-color: var(--white);
+    color: var(--indicator-2);
+}
+.field-wrapper .field button.box.indicator-3 {
+    background-color: var(--white);
+    color: var(--indicator-3);
+}
+.field-wrapper .field button.box.indicator-4 {
+    background-color: var(--white);
+    color: var(--indicator-4);
+}
+.field-wrapper .field button.box.indicator-5 {
+    background-color: var(--white);
+    color: var(--indicator-5);
+}
+.field-wrapper .field button.box.indicator-6 {
+    background-color: var(--white);
+    color: var(--indicator-6);
+}
+.field-wrapper .field button.box.indicator-7 {
+    background-color: var(--white) !important;
+    color: var(--indicator-7) !important;
+}
+.field-wrapper .field button.box[disabled] {
+    cursor: default;
+}
+@keyframes flag-field {
+    from {
+        background-size: 0% 0%;
+    }
+    to {
+        background-size: 80% 80%;
+    }
+}

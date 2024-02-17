@@ -1,0 +1,26 @@
+:root {
+    --navbar-height: 3rem;
+}
+.navbar {
+    height: var(--navbar-height);
+    width: 100%;
+    background-color: var(--dark-purple);
+    box-sizing: border-box;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.navbar .tool {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    font-family: var(--font-family);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 0px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

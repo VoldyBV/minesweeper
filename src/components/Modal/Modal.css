@@ -1,0 +1,89 @@
+:root {
+    --modal-padding: 1rem;
+    --modal-borderRadius: 2rem;
+    --modal-border: solid #131313 3px;
+    --modal-width: 80%;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(19, 19, 19, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+}
+.modal .header {
+    width: var(--modal-width);
+    background-color: var(--white);
+    padding: var(--modal-padding);
+    border: var(--modal-border);
+    border-top-left-radius: var(--modal-borderRadius);
+    border-top-right-radius: var(--modal-borderRadius);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+.modal .body {
+    max-height: 60%;
+    overflow: auto;
+    width: var(--modal-width);
+    background-color: var(--white);
+    padding: var(--modal-padding);
+    border-left: var(--modal-border);
+    border-right: var(--modal-border);
+}
+.modal .footer {
+    width: var(--modal-width);
+    background-color: var(--white);
+    padding: var(--modal-padding);
+    border: var(--modal-border);
+    border-bottom-left-radius: var(--modal-borderRadius);
+    border-bottom-right-radius: var(--modal-borderRadius);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    column-gap: 1.5rem;
+}
+.modal .footer button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: var(--font-family);
+    border: solid 2px;
+    transition: all 0.3s;
+    padding: 0.5rem;;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    flex: 1;
+}
+.modal .footer .accept {
+    background-color: hsl(189, 43%, 40%);
+    color: var(--white);
+    border-color: hsl(189, 43%, 40%);
+}
+.modal .footer .accept:hover {
+    background-color: hsl(189, 43%, 50%);
+}
+.modal .footer .ok {
+    background-color: hsl(258, 22%, 36%);
+    color: var(--white);
+    border-color: hsl(258, 22%, 36%);
+}
+.modal .footer .ok:hover {
+    background-color: hsl(258, 22%, 46%);
+}
+.modal .footer .abort {
+    background-color: hsl(0, 69%, 34%);
+    color: var(--white);
+    border-color: hsl(0, 69%, 34%);
+}
+.modal .footer .abort:hover {
+    background-color: hsl(0, 60%, 52%);
+}
